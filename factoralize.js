@@ -8,7 +8,7 @@
 
 // Only integers greater than or equal to zero will be supplied to the function.
 // 0! = 1;
-function factoralize(val) {
+function factorialize(val) {
     if (val === 0 || val === 1) {
         console.log(1);
     } for (i = val-1; i > 1; i--) {
@@ -16,4 +16,16 @@ function factoralize(val) {
         console.log(val)
     }
 }
-factoralize(6);
+
+function factorialize2(num) {
+    let factorization = num;
+    if (num === 0 || num === 1) {
+        console.log(1);
+    } 
+    while (num > 1) {
+        num--;
+        factorization *= num;
+    }
+    console.log(factorization);
+}
+factorialize2(8);
